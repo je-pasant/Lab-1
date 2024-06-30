@@ -5,7 +5,9 @@
 - Password: xxxxx
   
 ```bash
-sudo useradd -m -c "Basant Ehab" -p $(openssl passwd -1 xxxxx) BB
+sudo useradd -c "Basant Ehab" BB
+sudo passwd BB
+
 ```
 
 ### 2: Create a user account with the following attributes:
@@ -14,7 +16,8 @@ sudo useradd -m -c "Basant Ehab" -p $(openssl passwd -1 xxxxx) BB
 - Password: baduser
 
 ```bash
-sudo useradd -m -c "Bad User" -p $(openssl passwd -1 baduser) baduser
+sudo useradd -c "Bad User" baduser
+sudo passwd baduser 
 ```
 
 ### 3: Create a supplementary (Secondary) group called pgroup with group ID of 30000.
@@ -69,14 +72,14 @@ sudo groupdel badgroup
 ###  11: Create a folder called 'myteam' in your home directory and change its permissions to read-only for the owner.
 
 ```bash
-mkdir ~/myteam
-chmod 400 ~/myteam
+mkdir myteam
+chmod 400 myteam
 ```
 
 ###  12: Log out and log in as another user. Try to access the folder 'myteam' using the `cd` command. Explain the result.
 
 ```bash
-cd ~/myteam
+cd myteam
 # You should receive a permission denied error if permissions are set correctly.
 ```
 
