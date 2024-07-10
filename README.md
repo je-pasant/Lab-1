@@ -79,8 +79,10 @@ chmod 400 myteam
 ###  12: Log out and log in as another user. Try to access the folder 'myteam' using the `cd` command. Explain the result.
 
 ```bash
-cd myteam
-# You should receive a permission denied error if permissions are set correctly.
+sudo su BB
+$ cd myteam
+# sh: 1: cd: can't cd to myteam
+The error message sh: 1: cd: can't cd to myteam indicates that the myteam directory does not exist or the user BB does not have the necessary permissions to access it.
 ```
 
 ###  13: Change the permissions of 'oldpasswd' file to give owner read and write permissions, group write and execute permissions, and execute permission only for others using `chmod` in two different ways.
