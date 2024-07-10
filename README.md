@@ -1,5 +1,5 @@
 # Lab-1
-###1:Create a user account with the following attributes:
+### 1:Create a user account with the following attributes:
 - Username: BB
 - Fullname/comment: Basant Ehab
 - Password: xxxxx
